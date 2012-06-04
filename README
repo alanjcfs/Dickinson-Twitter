@@ -1,0 +1,13 @@
+This is a Dickinson Twitter.
+
+wikisource-retriever.rb was used to retrieve all the poems listed in
+[Wikipedia](http://en.wikipedia.org/wiki/List_of_Emily_Dickinson_poems);
+it turned out that the list was not completely accurate, resulting in several
+hundreds missing poems. Many of the errors were corrected by adding dashes 
+at the end of each file using retrieve_missing_poems.rb.
+
+Because em dash requires Unicode support, the magic comment *# encoding: UTF-8*
+is added.
+
+oauth_configure.rb was added to .gitignore to keep consumer_secret and
+oauth_token_secret confidential.
