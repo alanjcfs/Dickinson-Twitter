@@ -40,9 +40,9 @@ if input == "Y" or input == "YES" or input.empty?
       sleep ONE_MINUTE
     else
       split_stanza = stanza.split("\n")
-      tweet split_stanza[0...2], client
+      tweet split_stanza[0...2].join("\n"), client
       sleep ONE_MINUTE
-      tweet split_stanza[2...4], client
+      tweet split_stanza[2...4].join("\n"), client
       puts stanza
       sleep ONE_MINUTE
     end
