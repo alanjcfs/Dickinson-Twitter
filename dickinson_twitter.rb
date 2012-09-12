@@ -16,7 +16,7 @@ begin
     lines = poem.recite # lines will be of Array class
   else
     poem.pick
-    lines  = poem.recite
+    lines = poem.recite
   end
   puts "Poem picked: #{poem.picked}"
   puts lines
@@ -48,4 +48,3 @@ if input == "Y" or input == "YES" or input.empty?
     end
   end
 end
-Twitter.reset
