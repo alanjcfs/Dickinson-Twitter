@@ -1,4 +1,3 @@
-
 Perception of an object costs
 Precise the Object's loss —
 Perception in itself a Gain
