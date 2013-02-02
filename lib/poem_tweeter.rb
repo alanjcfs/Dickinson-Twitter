@@ -9,7 +9,7 @@ class PoemTweeter
     stanzas.push(
       lines.inject do |tweet, line|
         tweet_line = tweet + "\n" + line
-        if tweet_line.size > 130
+        if tweet_line.size >= 130
           stanzas.push(tweet)
           line
         else
